@@ -11,8 +11,8 @@
 
 (def routes
   (atom
-   ["/" {""      :home
-         "print" :print}]))
+   ["/" {"fee-calculator/"      :home
+         "fee-calculator/print" :print}]))
 
 (defn parse
   [url]
