@@ -24,7 +24,6 @@
 
 (defn dispatch
   [route]
-  (println "route:" route)
   (let [panel (keyword (str (name (:handler route)) "-panel"))]
     (re-frame/dispatch [::events/set-active-panel panel])))
 
